@@ -3,7 +3,7 @@ function gemini() {
     var api_url = document.querySelector('.api-url').value;
     var prompt = document.querySelector('.prompt').value;
     var slider_element = document.querySelector('.slider');
-    var request_count = slider_element.value
+    var request_number = slider_element.value
     var results_container = document.querySelector('.result-container');
 
     results_container.innerHTML = ''
@@ -30,7 +30,7 @@ function gemini() {
 
         console.log(prompt)
 
-        var url = `${api_url}/api/gemini?request_count=${request_count}&prompt=${prompt}`;
+        var url = `${api_url}/gemini-bulk?request_number=${request_number}&prompt=${prompt}`;
 
         fetch(url)
     
