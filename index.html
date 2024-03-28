@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alpır Gemini</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <input class="api-url" type="text" placeholder="API URL">
+    <div class="api-status"></div>
+    <input class="prompt" type="text" placeholder="Bana istediğini sor...">
+    <input class="slider" type="range" value="5" min="1" max="30">
+    <p class="slider-value">Kaç adet cevap oluşturmak istiyorsunuz : 5</p>
+    <button class="prompt-button">Oluştur</button>
+    <div class="result-container"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
